@@ -1,6 +1,6 @@
 function solution(d, budget) {
   var answer = 0;
-  let array = d.sort();
+  let array = d.sort((a, b) => a - b);
   for (let i = 0; i < d.length; i++) {
     if (budget - array[i] >= 0) {
       budget = budget - array[i];
